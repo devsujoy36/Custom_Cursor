@@ -14,7 +14,7 @@
       body {
         height: 100vh;
         background-color: #1b1b1f;
-        cursor: ;
+        cursor: none;
       }
       .cursor-dot {
         width: 5px;
@@ -22,8 +22,8 @@
         background-color: white;
       }
       .cursor-outline {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border: 3px solid hsla(0, 0%, 100%, 0.5);
       }
       .cursor-dot,
@@ -56,11 +56,13 @@
         // cursorOutline.style.left = `${posX}px`
         // cursorOutline.style.top = `${posY}px`
 
-
-        cursorOutline.animate({
-          left : `${posX}px`,
-          top : `${posY}px`
-        },{duration:500, fill:"forword"});
+        cursorOutline.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`
+          },
+          { duration: 500, fill: "forwards" }
+        )
       })
     </script>
   </body>
